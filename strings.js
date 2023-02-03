@@ -1,12 +1,14 @@
-//Довжина стороки. Властивість length
+//Довжина строки. Властивість length
 
 const message = 'У цій строці 25 символів.';
+
 console.log();
 
 //Конкатинація строк
 const furstName = 'Chelsy';
 const lastName = 'Esmerald';
 
+console.log();
 
 /*Напиши скрипт який виводить строку у форматі:
 * "Гість х у поселяється в z номер q"
@@ -15,6 +17,8 @@ const lastName = 'Esmerald';
 
 const room = 716;
 const type = 'VIP';
+// const welcomeMsg = ;
+
 console.log();
 
 
@@ -23,7 +27,8 @@ console.log();
 * Створюєємо строку поселення в готель
 */
 const quantity = 5;
-const ordermsg = `Ви замовили холодильників`;
+const ordermsg = `Ви замовили 5 холодильників`;
+
 console.log();
 
 /*
@@ -32,7 +37,13 @@ console.log();
 // Що шукаєм?
 
 
+console.log();
+
+
 // Метод slice()
+const tel = "Samsung";
+
+console.log();
 
 
 // Пошук в строці з методом includes()
