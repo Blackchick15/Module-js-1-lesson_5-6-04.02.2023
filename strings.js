@@ -1,14 +1,14 @@
 //Довжина строки. Властивість length
 
-const message = 'У цій строці 25 символів.';
+// const message = 'У цій строці 25 символів.';
 
-console.log();
+// console.log(message.length);
 
 //Конкатинація строк
 const furstName = 'Chelsy';
 const lastName = 'Esmerald';
 
-console.log();
+console.log(furstName +  lastName);
 
 /*Напиши скрипт який виводить строку у форматі:
 * "Гість х у поселяється в z номер q"
@@ -17,20 +17,20 @@ console.log();
 
 const room = 716;
 const type = 'VIP';
-// const welcomeMsg = ;
+// const welcomeMsg = 'Гість' +  ""  +    furstName + "" + lastName +  "" + "поселяється" + "" + "в" +  ""  + type +  "" +  'номер' + room;
 
-console.log();
+// console.log();
 
 
 /* 
 * Шаблонні стороки
 * Створюєємо строку поселення в готель
 */
-const quantity = 5;
-const ordermsg = `Ви замовили 5 холодильників`;
+const quantity = 25;
+const ordermsg = `Ви замовили ${quantity} холодильників`;
 
-console.log();
-
+// console.log(`Гість ${furstName} ${lastName}  поселяється в ${type} номер ${room}`);
+// console.log(ordermsg)
 /*
 Нормалізація з методом toLowerCase()
 */
@@ -42,8 +42,11 @@ console.log();
 
 // Метод slice()
 const tel = "Samsung";
+const inOb = 'Samsung';
+const normalixeTel = tel.toUpperCase();
+console.log(tel)
 
-console.log();
+console.log(normalixeTel);
 
 
 // Пошук в строці з методом includes()
