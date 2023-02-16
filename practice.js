@@ -10,13 +10,15 @@ const x1 = 10;
 const x2 = 30;
 const number = 50;
 
-// console.log(`Число ${number} попадає у відрізок до ${x1}`, );
 
-// console.log(`Число ${number} попадає у відрізок після ${x2}`, );
+console.log(`Число ${number} попадає у відрізок до ${x1}`,number < x1 );
 
-// console.log(`Число ${number} попадає у відрізок до ${x1} до ${x2}`, );
+console.log(`Число ${number} попадає у відрізок після ${x2}`,number > x2 );
 
-// console.log(`Число ${number} попадає у відрізок до ${x1} або після ${x2}`, );
+const res1 = number > x1 && number < x2;
+console.log(`Число ${number} попадає у відрізок до ${x1} до ${x2}`, );
+
+console.log(`Число ${number} попадає у відрізок до ${x1} або після ${x2}`, );
 
 
 // ......................
