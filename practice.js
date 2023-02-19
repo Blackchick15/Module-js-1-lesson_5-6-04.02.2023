@@ -35,8 +35,8 @@ _ онлайн
 const isOnline = true;
 const isFriend = true;
 const isDnd = false;
-const canOpenChat = isOnline && isFriend;
-// const canOpenChat = ;
+const canOpenChat = isOnline && isFriend && ! !isDnd;
+
 console.log('Можна відкрити чат?', canOpenChat);
 // ..........................
 
