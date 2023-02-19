@@ -35,9 +35,10 @@ _ онлайн
 const isOnline = true;
 const isFriend = true;
 const isDnd = false;
+
 const canOpenChat = isOnline && isFriend && ! !isDnd;
 
-console.log('Можна відкрити чат?', canOpenChat);
+// console.log('Можна відкрити чат?', canOpenChat);
 // ..........................
 
 /*
@@ -49,8 +50,8 @@ console.log('Можна відкрити чат?', canOpenChat);
 */
 const sub = "pro";
 
-// const canAccessContent = ;
-// console.log("Є доступ до контенту?", canAccessContent);
+const canAccessContent = sub === "pro" || sub === "vip" ;
+console.log("Є доступ до контенту?", canAccessContent);
 // ...........................
 
 // Задача №4
@@ -59,9 +60,10 @@ const sub = "pro";
 Де < назва товару > і < ціна товару > — це значення змінних productName і pricePerItem.
 Використовуй синтаксис шаблонних рядків.
 */
-const productName = "Droid";
-const pricePerItem = 3500;
-
+// const productName = "Droid";
+// const pricePerItem = 3500;
+// const message = `You picked $(productName), price per item is $(pricePerItem ) credits`
+// console.log(message)
 // ..................................................
 
 // Задача № 5
@@ -76,6 +78,12 @@ const pricePerItem = 3500;
 // message - повідомлення про стан замовлення у форматі
 // "You ordered droids worth <total price> credits. Delivery (<delivery fee> credits) is included in total price."
 
+const pricePerDroid = 800;
+const orderedQuantity = 6;
+const deliveryFee = 50;
+const totalPrice = pricePerDroid * orderedQuantity * deliveryFee;
+const message = `You ordered droids worth ${totalPrice} credits. Delivery ${deliveryFee} credits is included in total price.`;
+console.log(message)
 // ....................................................
 
 // Задача № 6
